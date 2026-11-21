@@ -38,3 +38,6 @@ html, body { margin: 0; overflow: hidden; background: #000; }
   max-width: 90vw; word-break: break-all;
 }
 #debug.off { display: none; }
+
+/* A-Frame の「VR」ボタンを隠す（vr-mode-ui="enabled:false" だけでは消えないため） */
+.a-enter-vr, .a-enter-ar { display: none !important; }
