@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>しゃべるサンタ</title>
+    <link rel="preconnect" href="https://aframe.io">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+    <link rel="stylesheet" href="js/ar-core.css">
+</head>
+
+<body>
+    <script>
+        window.AR_CONFIG = {
+
+            video: 'assets/videos/santavoice_light.mp4',
+
+            // ひとまず写真に合わせる（動画の縦横比 480 × 316 に合わせる）
+            // はがきのデザインができたら、はがきの縦横比に直す
+            width: 1,
+            height: 0.658,
+
+            intro: 'メリークリスマス！🎅お茶の水 サンクレールでお会いしましょう！',
+            message: 'カメラを準備しています…<br>準備ができたら写真をかざしてください',
+
+            links: [],
+
+            debug: false
+
+        };
+    </script>
+    <script src="js/ar-core.js"></script>
+</body>
+
+</html>
